@@ -1,11 +1,12 @@
 import './App.css'
+import Nav from './components/header/Nav/Nav'
 
 function App() {
 
   return (
-    <>
-      <h1 className='text-7xl text-center'>DigiTools</h1>
-    </>
+    <div className='container mx-auto'>
+      <Nav></Nav>
+    </div>
   )
 }
 
