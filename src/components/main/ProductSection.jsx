@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import ProductSectionTop from './ProductSectionTop';
 import Products from './Products/Products';
+import Cart from './Cart/Cart';
 
 const ProductSection = () => {
     // tab toggle
@@ -14,7 +15,12 @@ const ProductSection = () => {
             <ProductSectionTop productTab={productTab} setProductTab={setProductTab}></ProductSectionTop>
 
             <Suspense fallback={<h1 className='text-4xl text-center'>Loading...</h1>}>
-                <Products productPromise={productPromise}></Products>
+                {
+                    productTab ?
+                        <Products productPromise={productPromise}></Products>
+                        :
+                        <Cart></Cart>
+                }
             </Suspense>
         </div>
     );
