@@ -1,0 +1,16 @@
+import React, { use } from 'react';
+import Product from '../Product/Product';
+
+const Products = ({productPromise}) => {
+    const data = use(productPromise);
+    // console.log(data);
+    return (
+        <div className='container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            {
+                data.map((product, ind) => <Product key={ind} product={product}></Product>)
+            }
+        </div>
+    );
+};
+
+export default Products;

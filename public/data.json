@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "ResumePro Builder",
+        "description": "Create professional resumes with modern templates and ATS-friendly formatting.",
+        "price": 9.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best-seller",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF",
+            "Cover letter builder"
+        ],
+        "icon": "FileText"
+    },
+    {
+        "id": 2,
+        "name": "DesignKit UI",
+        "description": "A complete UI kit for designers with ready-to-use components and layouts.",
+        "price": 29,
+        "period": "one-time",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "500+ UI components",
+            "Figma & Sketch support",
+            "Dark mode included",
+            "Lifetime updates"
+        ],
+        "icon": "Palette"
+    },
+    {
+        "id": 3,
+        "name": "SocialBoost Scheduler",
+        "description": "Schedule and automate posts across all major social media platforms.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Multi-platform posting",
+            "Auto scheduling",
+            "Analytics dashboard",
+            "Content calendar"
+        ],
+        "icon": "Calendar"
+    },
+    {
+        "id": 4,
+        "name": "CodeSnippet Vault",
+        "description": "Store, organize, and reuse your code snippets efficiently.",
+        "price": 5,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Syntax highlighting",
+            "Cloud sync",
+            "Search & tags",
+            "Team sharing"
+        ],
+        "icon": "Code"
+    },
+    {
+        "id": 5,
+        "name": "InvoiceMaster",
+        "description": "Generate and manage invoices for your freelance or business needs.",
+        "price": 19,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best-seller",
+        "features": [
+            "Custom invoice templates",
+            "Payment tracking",
+            "Tax calculation",
+            "PDF export"
+        ],
+        "icon": "Receipt"
+    },
+    {
+        "id": 6,
+        "name": "FocusFlow Timer",
+        "description": "Boost productivity using Pomodoro and deep work tracking tools.",
+        "price": 0,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Pomodoro timer",
+            "Task tracking",
+            "Daily reports",
+            "Distraction blocker"
+        ],
+        "icon": "Timer"
+    },
+    {
+        "id": 7,
+        "name": "AI Content Writer",
+        "description": "Generate blog posts, ads, and marketing content using AI.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Blog generation",
+            "SEO optimization",
+            "Multiple tones",
+            "Export options"
+        ],
+        "icon": "PenTool"
+    },
+    {
+        "id": 8,
+        "name": "PortfolioGen",
+        "description": "Build and launch your personal portfolio website in minutes.",
+        "price": 25,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best-seller",
+        "features": [
+            "Custom domains",
+            "Drag & drop builder",
+            "Responsive templates",
+            "SEO ready"
+        ],
+        "icon": "Globe"
+    }
+]
