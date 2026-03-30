@@ -3,7 +3,7 @@ import { CiShoppingCart } from 'react-icons/ci';
 
 const Nav = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="container mx-auto navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ const Nav = () => {
             <div className="navbar-end flex gap-2">
                 <a href=""><CiShoppingCart /></a>
                 <a className="btn rounded-full">Login</a>
-                <a className="btn rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white">Get Started</a>
+                <a className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Get Started</a>
             </div>
         </div>
     );

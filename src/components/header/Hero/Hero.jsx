@@ -3,7 +3,7 @@ import heroImg from '../../../assets/banner.png';
 
 const Hero = () => {
     return (
-        <div className='flex items-center justify-between mt-10'>
+        <div className='container mx-auto flex items-center justify-between mt-10'>
             <div className='space-y-4 w-[50%]'>
                 <div className='py-1 px-4 bg-[#4F39F630] rounded-full w-fit'>
                     <p className='text-[#9514FA]'>New Ai-Powered Tools Available</p>
@@ -14,7 +14,7 @@ const Hero = () => {
                     software—all in one place. Start creating faster today.
                 </p>
                 <div className='space-x-2'>
-                    <button className="btn rounded-full bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white">Explore Products</button>
+                    <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Explore Products</button>
                     <button className='btn rounded-full'>Watch Demo</button>
                 </div>
             </div>
