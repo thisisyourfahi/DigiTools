@@ -7,7 +7,7 @@ const Steps = () => {
     return (
         <div className='container mx-auto text-center p-4 space-y-4 mb-10'>
             <div className='space-y-2'>
-                <h2 className="text-3xl md:text-4xl font-semibold">Get Started In 3 Steps</h2>
+                <h2 className="text-3xl md:text-5xl font-semibold">Get Started In 3 Steps</h2>
                 <p>Start using premium digital tools in minutes, not hours.</p>
             </div>
             <div className='grid md:grid-cols-3 gap-4'>

@@ -5,6 +5,7 @@ import Hero from './components/header/Hero/Hero'
 import Nav from './components/header/Nav/Nav'
 import ProductSection from './components/main/ProductSection'
 import Steps from './components/main/Steps/Steps'
+import Pricing from './components/main/Pricing/Pricing'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
 
       {/* non functional */}
       <Steps></Steps>
-
+      <Pricing></Pricing>
+      
       <ToastContainer></ToastContainer>
     </div>
   )
