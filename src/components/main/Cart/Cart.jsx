@@ -5,6 +5,11 @@ const Cart = ({ cartProducts, setCartProducts }) => {
     console.log('cart products', cartProducts)
     const temp = cartProducts.reduce((sum, p) => sum + p.price, 0);
     const [total, setTotal] = useState(temp);
+    const handleCheckOut = () => {
+        console.log('checkout');
+        alert('chekout!')
+        setCartProducts([]);
+    }
 
     return (
         <div className='container mx-auto p-4 rounded-md shadow-md space-y-4'>
@@ -21,7 +26,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
                             <p>Total</p>
                             <p>${total}</p>
                         </div>
-                        <button className='btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed To CheckOut</button>
+                        <button onClick={handleCheckOut} className='btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed To CheckOut</button>
                     </div> :
                     <p className='text-7xl p-10 text-center'>Empty Cart</p>
             }
