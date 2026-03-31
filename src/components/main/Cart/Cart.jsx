@@ -13,7 +13,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
     }
 
     return (
-        <div className='container mx-auto p-4 rounded-md shadow-md space-y-4'>
+        <div className='container mx-auto p-4 shadow-md space-y-4 border border-gray-200 rounded-2xl'>
             <h1 className="text-3xl font-semibold">Your Cart</h1>
             <div className='space-y-2'>
                 {
@@ -29,7 +29,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
                         </div>
                         <button onClick={handleCheckOut} className='btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed To CheckOut</button>
                     </div> :
-                    <p className='text-7xl p-10 text-center'>Empty Cart</p>
+                    <p className='text-7xl p-10 text-center bg-gray-200 rounded-2xl'>Empty Cart</p>
             }
         </div>
     );

@@ -15,7 +15,7 @@ const Hero = () => {
                 </p>
                 <div className='space-x-2'>
                     <button className="btn rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Explore Products</button>
-                    <button className='btn rounded-full'>Watch Demo</button>
+                    <button className='btn btn-primary btn-outline rounded-full'>Watch Demo</button>
                 </div>
             </div>
 

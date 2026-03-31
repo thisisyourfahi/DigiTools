@@ -13,7 +13,7 @@ const ProductSection = () => {
     const [cartProducts, setCartProducts] = useState([])
 
     return (
-        <div className='mt-10 space-y-8'>
+        <div className='mt-10 space-y-8 mb-10'>
             <ProductSectionTop productTab={productTab} setProductTab={setProductTab} cartProducts={cartProducts}></ProductSectionTop>
 
             <Suspense fallback={<h1 className='text-4xl text-center'>Loading...</h1>}>
