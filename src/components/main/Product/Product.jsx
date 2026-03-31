@@ -3,10 +3,14 @@ import Feature from './Feature';
 
 const Product = ({ product, cartProducts, setCartProducts }) => {
     // console.log(product);
+    const exist = cartProducts.find(p => p.id === product.id);
+
     const handleClick = () => {
-        console.log('add product', product);
-        const ar = [...cartProducts, product];
-        setCartProducts(ar);
+        if (!exist) {
+            console.log('add product', product);
+            const ar = [...cartProducts, product];
+            setCartProducts(ar);
+        }
     }
     return (
         <div className="card bg-base-100 shadow-xl">
@@ -23,7 +27,13 @@ const Product = ({ product, cartProducts, setCartProducts }) => {
                     }
                 </ul>
                 <div className="mt-6">
-                    <button onClick={handleClick} className="btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Buy Now</button>
+                    <button onClick={handleClick}
+                        className={`btn rounded-full w-full ${exist ? 'btn-success' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'}`}>
+                            {
+                                exist ? 
+                                    "Added To Cart" : "Buy Now"
+                            }
+                    </button>
                 </div>
             </div>
         </div>
