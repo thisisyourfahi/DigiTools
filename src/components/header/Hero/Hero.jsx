@@ -3,8 +3,8 @@ import heroImg from '../../../assets/banner.png';
 
 const Hero = () => {
     return (
-        <div className='container mx-auto flex items-center justify-between mt-10'>
-            <div className='space-y-4 w-[50%]'>
+        <div className='container mx-auto flex flex-col gap-4 md:gap-0 md:flex-row items-center justify-between mt-10 p-4 md:p-0'>
+            <div className='space-y-4 md:w-[50%]'>
                 <div className='py-1 px-4 bg-[#4F39F630] rounded-full w-fit'>
                     <p className='text-[#9514FA]'>New Ai-Powered Tools Available</p>
                 </div>
