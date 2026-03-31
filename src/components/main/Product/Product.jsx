@@ -1,5 +1,6 @@
 import React from 'react';
 import Feature from './Feature';
+import { toast } from 'react-toastify';
 
 const Product = ({ product, cartProducts, setCartProducts }) => {
     // console.log(product);
@@ -7,7 +8,9 @@ const Product = ({ product, cartProducts, setCartProducts }) => {
 
     const handleClick = () => {
         if (!exist) {
-            console.log('add product', product);
+            toast.success("Product Added!", {
+                autoClose: 1000
+            })
             const ar = [...cartProducts, product];
             setCartProducts(ar);
         }

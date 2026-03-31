@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CartProduct from './CartProduct';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cartProducts, setCartProducts }) => {
     console.log('cart products', cartProducts)
@@ -7,8 +8,8 @@ const Cart = ({ cartProducts, setCartProducts }) => {
     const [total, setTotal] = useState(temp);
     const handleCheckOut = () => {
         console.log('checkout');
-        alert('chekout!')
         setCartProducts([]);
+        toast.success('Check Out Successfull!')
     }
 
     return (

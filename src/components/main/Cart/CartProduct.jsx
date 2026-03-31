@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegTrashAlt } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const CartProduct = ({ product, total, setTotal, cartProducts, setCartProducts }) => {
     console.log('cart product el', product);
@@ -7,6 +8,9 @@ const CartProduct = ({ product, total, setTotal, cartProducts, setCartProducts }
         const newCartProducts = cartProducts.filter(pr => pr.id !== product.id);
         setCartProducts([...newCartProducts]);
         setTotal((total - product.price));
+        toast.error('Product Removed!', {
+            autoClose: 1000
+        })
     }
     return (
         <div className='bg-gray-100 rounded-md p-4 flex items-center justify-between'>
