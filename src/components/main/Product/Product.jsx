@@ -1,8 +1,13 @@
 import React from 'react';
 import Feature from './Feature';
 
-const Product = ({ product }) => {
-    console.log(product);
+const Product = ({ product, cartProducts, setCartProducts }) => {
+    // console.log(product);
+    const handleClick = () => {
+        console.log('add product', product);
+        const ar = [...cartProducts, product];
+        setCartProducts(ar);
+    }
     return (
         <div className="card bg-base-100 shadow-xl">
             <div className="card-body">
@@ -18,7 +23,7 @@ const Product = ({ product }) => {
                     }
                 </ul>
                 <div className="mt-6">
-                    <button className="btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Buy Now</button>
+                    <button onClick={handleClick} className="btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">Buy Now</button>
                 </div>
             </div>
         </div>

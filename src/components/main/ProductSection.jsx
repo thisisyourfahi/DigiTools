@@ -10,16 +10,18 @@ const ProductSection = () => {
     // data fetch
     const productPromise = fetch('/data.json').then(res => res.json());
 
+    const [cartProducts, setCartProducts] = useState([])
+
     return (
         <div className='mt-10 space-y-8'>
-            <ProductSectionTop productTab={productTab} setProductTab={setProductTab}></ProductSectionTop>
+            <ProductSectionTop productTab={productTab} setProductTab={setProductTab} cartProducts={cartProducts}></ProductSectionTop>
 
             <Suspense fallback={<h1 className='text-4xl text-center'>Loading...</h1>}>
                 {
                     productTab ?
-                        <Products productPromise={productPromise}></Products>
+                        <Products productPromise={productPromise} cartProducts={cartProducts} setCartProducts={setCartProducts}></Products>
                         :
-                        <Cart></Cart>
+                        <Cart cartProducts={cartProducts} setCartProducts={setCartProducts}></Cart>
                 }
             </Suspense>
         </div>

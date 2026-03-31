@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductSectionTop = ({productTab, setProductTab}) => {
+const ProductSectionTop = ({productTab, setProductTab, cartProducts}) => {
     return (
         <div className='text-center space-y-4'>
             <h3 className="text-4xl font-semibold">Premium Digital Tools</h3>
@@ -14,7 +14,7 @@ const ProductSectionTop = ({productTab, setProductTab}) => {
                 <button
                     onClick={() => setProductTab(false)}
                     className={`btn rounded-full ${productTab || 'gradient'}`}
-                >Cart(0)
+                >Cart({cartProducts.length})
                 </button>
             </div>
         </div>
