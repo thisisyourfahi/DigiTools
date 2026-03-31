@@ -29,7 +29,7 @@ const Cart = ({ cartProducts, setCartProducts }) => {
                         </div>
                         <button onClick={handleCheckOut} className='btn rounded-full w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed To CheckOut</button>
                     </div> :
-                    <p className='text-7xl p-10 text-center bg-gray-200 rounded-2xl'>Empty Cart</p>
+                    <p className='text-4xl md:text-7xl p-10 text-center bg-gray-200 rounded-2xl'>Empty Cart</p>
             }
         </div>
     );
